@@ -9,7 +9,8 @@ class Genre extends Model
 {
     use HasFactory;
     protected $guarded = [];
-    public function movie(){
+    public function movie()
+    {
         return $this->belongsTo(Movie::class);
     }
 }
