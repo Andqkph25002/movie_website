@@ -30,7 +30,7 @@ class MovieController extends Controller
 
         $category = Category::all();
 
-        return view('admin.movie.movie_all', compact('list','category'));
+        return view('admin.movie.movie_all', compact('list', 'category'));
     }
     public function MovieAdd()
     {
